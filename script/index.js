@@ -116,7 +116,7 @@ for (var i = 0; i < totalNumMonths; i++) {
     greatestInc[0][1] = finances[i][1] // set the value 
   }
 }
-console.log(`${greatestInc[0][0]} (${greatestInc[0][1]})`)
+// console.log(`${greatestInc[0][0]} (${greatestInc[0][1]})`)
 
 
 // greatest decrease 
@@ -129,4 +129,17 @@ for (var i = 0; i < totalNumMonths; i++) {
     greatestDec[0][1] = finances[i][1]
   }
 }
-console.log(`${greatestDec[0][0]} (${greatestDec[0][1]})`)
+// console.log(`${greatestDec[0][0]} (${greatestDec[0][1]})`)
+
+// console application 
+console.log(
+  `
+  Financial Analysis 
+  ----------------
+  Total Months: ${totalNumMonths}
+  Total: ${totalProfitLoss} 
+  Average Change: ${averageChange}
+  Greatest Increase in Profits/Losses: ${greatestInc[0][0]} (${greatestInc[0][1]})
+  Greatest Decrease in Profits/Losses: ${greatestDec[0][0]} (${greatestDec[0][1]})
+  `
+  )
