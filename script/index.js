@@ -100,9 +100,21 @@ for (var i = 0; i < totalNumMonths; i++) {
 
 // average change calculation, toFixed is changing that value to 2 decimal places
 var totalChange = 0; 
-
 for (var i = 1; i < totalNumMonths; i++) {
   totalChange = finances[i][1] - finances[i-1][1];
 }
 var averageChange = (totalChange/(totalNumMonths - 1)).toFixed(2);
 //console.log(averageChange);
+
+// greatest increase
+var greatestInc = 0; 
+var greatestIncMonth; 
+for (var i = 0; i < totalNumMonths; i++) {
+  // if the profit/loss for current month is bigger than the greatestInc value then set that as the greatest inc
+  // and set the greatestIncMonth 
+  if (finances[i][1] > greatestInc){
+    greatestInc = finances [i][1]
+    greatestIncMonth = finances[i]
+  }
+}
+// console.log(`${greatestIncMonth[0]} (${greatestInc})`)
