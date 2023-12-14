@@ -16,18 +16,13 @@
 
 
 ## Description
-
 The purpose of this simple console application is to allow a user to have their data set processed and then visually presented to them. Using simple concepts such as loops and conditional loops I was able to work out different information from the raw array that I was given. Information such as Total Months, Total Profit/Loss, average profit/loss change from month to month as well as the greatest increase/decrease in profit/loss. I have then presented this information using the console.log function and backticks.
 
 
 ## Screenshot
 
 
-<<<<<<< HEAD
-![Screenshot of the console of application](./images/screenshot-01.PNG)
-=======
-![Screenshot of the console of application](/images/screenshot-01.png)
->>>>>>> 0c751b6cbe5169383aeeeb1c273205b347039fff
+![Screenshot of the console of application](./assets/images/screenshot-01.PNG)
 
 
 ## Installation
@@ -41,9 +36,9 @@ To install this project clone the repo
 Open the files in VS Code and select 'Open With Live Server' on index.html. Right click anywhere on the page and press inspect element. Next, navigate to the console tab and the console application should be visible.
 
 
-![Screenshot of inspect element on the webpage](./images/screenshot-inspect.PNG)
+![Screenshot of inspect element on the webpage](./assets/images/screenshot-inspect.PNG)
 
-![Screenshot of the console of application](./images/screenshot-01.PNG)
+![Screenshot of the console of application](./assets/images/screenshot-01.PNG)
 
 Any changes you make to the script will be automatically updated on the live server.
 
