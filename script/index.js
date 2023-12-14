@@ -87,4 +87,6 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
-console.log(`test`)
+//total number of moths is equal to the length of the array
+var totalNumMonths = finances.length;
+//console.log(totalNumMonths);
