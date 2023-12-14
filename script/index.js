@@ -107,14 +107,13 @@ var averageChange = (totalChange/(totalNumMonths - 1)).toFixed(2);
 //console.log(averageChange);
 
 // greatest increase
-var greatestInc = 0; 
-var greatestIncMonth; 
+var greatestInc = [['Month', 0]]
 for (var i = 0; i < totalNumMonths; i++) {
   // if the profit/loss for current month is bigger than the greatestInc value then set that as the greatest inc
   // and set the greatestIncMonth 
-  if (finances[i][1] > greatestInc){
-    greatestInc = finances [i][1]
-    greatestIncMonth = finances[i]
+  if (finances[i][1] > greatestInc[0][1]){
+    greatestInc[0][0] = finances[i][0] // set the month
+    greatestInc[0][1]= finances[i][1] // set the value 
   }
 }
-// console.log(`${greatestIncMonth[0]} (${greatestInc})`)
+//console.log(`${greatestInc[0][0]} (${greatestInc[0][1]})`)
