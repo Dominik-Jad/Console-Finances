@@ -23,7 +23,7 @@ The purpose of this simple console application is to allow a user to have their 
 ## Screenshot
 
 
-![Screenshot of the console of application](./images/screenshot-01.png)
+![Screenshot of the console of application](/images/screenshot-01.png)
 
 
 ## Installation
