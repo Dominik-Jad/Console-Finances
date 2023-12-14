@@ -23,7 +23,11 @@ The purpose of this simple console application is to allow a user to have their 
 ## Screenshot
 
 
+<<<<<<< HEAD
 ![Screenshot of the console of application](./images/screenshot-01.PNG)
+=======
+![Screenshot of the console of application](/images/screenshot-01.png)
+>>>>>>> 0c751b6cbe5169383aeeeb1c273205b347039fff
 
 
 ## Installation
