@@ -90,3 +90,10 @@ var finances = [
 //total number of moths is equal to the length of the array
 var totalNumMonths = finances.length;
 //console.log(totalNumMonths);
+
+// total profit and loss over the entire period. all values added up in a for loop
+var totalProfitLoss = 0;
+for (var i = 0; i < totalNumMonths; i++) {
+  totalProfitLoss = totalProfitLoss + finances[i][1];
+}
+//console.log(totalProfitLoss);
