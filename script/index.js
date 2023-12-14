@@ -1,6 +1,6 @@
 var finances = [
   ['Jan-2010', 867884],
-  ['Feb-2010', 984655],
+  ['Feb-2010', -984655],
   ['Mar-2010', 322013],
   ['Apr-2010', -69417],
   ['May-2010', 310503],
@@ -84,7 +84,7 @@ var finances = [
   ['Nov-2016', 795914],
   ['Dec-2016', 60988],
   ['Jan-2017', 138230],
-  ['Feb-2017', 671099],
+  ['Feb-2017', 671099]
 ];
 
 //total number of moths is equal to the length of the array
@@ -97,3 +97,12 @@ for (var i = 0; i < totalNumMonths; i++) {
   totalProfitLoss = totalProfitLoss + finances[i][1];
 }
 //console.log(totalProfitLoss);
+
+// average change calculation, toFixed is changing that value to 2 decimal places
+var totalChange = 0; 
+
+for (var i = 1; i < totalNumMonths; i++) {
+  totalChange = finances[i][1] - finances[i-1][1];
+}
+var averageChange = (totalChange/(totalNumMonths - 1)).toFixed(2);
+//console.log(averageChange);
