@@ -23,7 +23,7 @@ The purpose of this simple console application is to allow a user to have their 
 ## Screenshot
 
 
-![Screenshot of the console of application](./images/screenshot-01.png)
+![Screenshot of the console of application](./images/screenshot-01.PNG)
 
 
 ## Installation
@@ -37,9 +37,9 @@ To install this project clone the repo
 Open the files in VS Code and select 'Open With Live Server' on index.html. Right click anywhere on the page and press inspect element. Next, navigate to the console tab and the console application should be visible.
 
 
-![Screenshot of vs code with open with live server option open](./images/screenshot-inspect.png)
+![Screenshot of inspect element on the webpage](./images/screenshot-inspect.PNG)
 
-![Screenshot of the console of application](./images/screenshot-01.png)
+![Screenshot of the console of application](./images/screenshot-01.PNG)
 
 Any changes you make to the script will be automatically updated on the live server.
 
