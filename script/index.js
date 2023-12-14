@@ -113,7 +113,20 @@ for (var i = 0; i < totalNumMonths; i++) {
   // and set the greatestIncMonth 
   if (finances[i][1] > greatestInc[0][1]){
     greatestInc[0][0] = finances[i][0] // set the month
-    greatestInc[0][1]= finances[i][1] // set the value 
+    greatestInc[0][1] = finances[i][1] // set the value 
   }
 }
-//console.log(`${greatestInc[0][0]} (${greatestInc[0][1]})`)
+console.log(`${greatestInc[0][0]} (${greatestInc[0][1]})`)
+
+
+// greatest decrease 
+var greatestDec = [['Month', 0]]
+for (var i = 0; i < totalNumMonths; i++) {
+  // if the profit/loss for current month is smaller than the greatestDec value then set that as the greatest dec
+  // and set the greatestDecMonth 
+  if (finances[i][1] < greatestDec[0][1]){
+    greatestDec[0][0] = finances[i][0]
+    greatestDec[0][1] = finances[i][1]
+  }
+}
+console.log(`${greatestDec[0][0]} (${greatestDec[0][1]})`)
